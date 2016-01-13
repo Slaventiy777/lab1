@@ -5,6 +5,10 @@ import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.Task;
 import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.TaskIO;
 import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.TaskList;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.text.ParseException;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.Set;
@@ -12,29 +16,43 @@ import java.util.SortedMap;
 
 public class WindowEdit implements WindowStrategy {
 
+
+
     @Override
     public void openWindow(TaskList tasks) {
 
-        System.out.println("***Edit task***/n");
+        System.out.println();
 
-        Iterator<Task> iter = tasks.iterator();
+        if(tasks.size() == 0) {
+            System.out.println("***Add task***");
+            System.out.println("");
+        } else {
 
-        if (iter.hasNext()) {
-            Task task = iter.next();
-            System.out.println(TaskIO.taskToString(task, true));
+            System.out.println("***Edit task***");
+            System.out.println("");
+
+            Iterator<Task> iter = tasks.iterator();
+
+            if (iter.hasNext()) {
+
+                Task task = iter.next();
+
+                System.out.println("Title        - '" + task.getTitle() + "';");
+                System.out.println("Is active    - " + task.isActive() + ";");
+
+                if(task.isRepeated()) {
+                    System.out.println("Start time   - " + task.getStartTime() + ";");
+                    System.out.println("End time     - " + task.getEndTime() + ";");
+                    System.out.println("Interval     - " + task.getInterval() + ";");
+                } else {
+                    System.out.println("Time         - " + task.getTime() + ";");
+                }
+
+            }
+
         }
 
         System.out.println();
-
-//        System.out.println("View task information enter: 1");
-//        System.out.println("Add new task enter:          2");
-//        System.out.println("Edit task enter:             3");
-//        System.out.println("Remove task enter:           4");
-//        System.out.println("View calendar enter:         5");
-//        System.out.println("Update list tasks enter:     6");
-//        System.out.println("Back list tasks enter:       7");
-//        System.out.println("Save task enter:             8");
-//        System.out.println("Quit enter:                  9");
 
     }
 

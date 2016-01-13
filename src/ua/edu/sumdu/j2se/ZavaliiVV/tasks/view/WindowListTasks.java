@@ -15,7 +15,9 @@ public class WindowListTasks implements WindowStrategy {
     @Override
     public void openWindow(TaskList tasks) {
 
-        System.out.println("***List tasks***/n");
+        System.out.println("");
+        System.out.println("***List tasks***");
+        System.out.println("");
 
         Iterator<Task> iter = tasks.iterator();
 
@@ -27,22 +29,11 @@ public class WindowListTasks implements WindowStrategy {
             Task task = iter.next();
 
             boolean lastIndex = !iter.hasNext();
-
             System.out.println(i + ". " + TaskIO.taskToString(task, lastIndex));
 
         }
 
         System.out.println();
-
-//        System.out.println("View task information enter: 1");
-//        System.out.println("Add new task enter:          2");
-//        System.out.println("Edit task enter:             3");
-//        System.out.println("Remove task enter:           4");
-//        System.out.println("View calendar enter:         5");
-//        System.out.println("Update list tasks enter:     6");
-//        System.out.println("Back list tasks enter:       7");
-//        System.out.println("Save task enter:             8");
-//        System.out.println("Quit enter:                  9");
 
     }
 

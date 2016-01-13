@@ -135,7 +135,7 @@ public class TaskIO {
             for (Task task : tasks) {
 
                 index++;
-                boolean lastIndex = (index != maxIndex);
+                boolean lastIndex = (index == maxIndex);
 
                 buffWriter.append(taskToString(task, lastIndex));
 
@@ -387,6 +387,15 @@ public class TaskIO {
         }
 
         return sb.toString();
+
+    }
+
+    public static Date stringToDate(String str) throws ParseException {
+
+        Date date;
+        date = sdf.parse(str);
+
+        return date;
 
     }
 

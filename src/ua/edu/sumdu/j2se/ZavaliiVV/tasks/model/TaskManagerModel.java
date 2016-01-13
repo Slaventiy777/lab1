@@ -1,14 +1,13 @@
 package ua.edu.sumdu.j2se.ZavaliiVV.tasks.model;
 
+import org.apache.log4j.Logger;
 import ua.edu.sumdu.j2se.ZavaliiVV.tasks.view.Observer;
+import ua.edu.sumdu.j2se.ZavaliiVV.tasks.view.OperationView;
 
 import java.io.File;
 import java.io.IOException;
 import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by Zavalii V.V. on 28.12.2015.
@@ -19,6 +18,7 @@ public class TaskManagerModel implements Observable {
     private String tasksPathName;
     private List<Observer> observers;
     private TaskList allTasks;
+    private static final Logger log = Logger.getLogger(TaskManagerModel.class);
 
     public TaskManagerModel(String tasksPathName) {
 
@@ -37,7 +37,7 @@ public class TaskManagerModel implements Observable {
         try {
             TaskIO.readText(allTasks, new File(tasksPathName));
         } catch (IOException e) {
-            throw new IOException(e);
+            log.error(e.getMessage(), e);
         }
         return allTasks;
     }
@@ -46,13 +46,14 @@ public class TaskManagerModel implements Observable {
         TaskIO.writeText(allTasks, new File(tasksPathName));
     }
 
-    public void addTask(Task task) {
+    public void addTask(Task task) throws IOException {
         allTasks.add(task);
         notifyObservers();
     }
 
-    public void removeTask(Task task) {
+    public void removeTask(Task task) throws IOException {
         allTasks.remove(task);
+        writeAllTasksList();
         notifyObservers();
     }
 
@@ -69,6 +70,29 @@ public class TaskManagerModel implements Observable {
 
     }
 
+    public SortedMap<Date, Set<Task>> calendar(Iterable<Task> tasks, Date start, Date end) {
+        return Tasks.calendar(tasks, start, end);
+    }
+
+    public TaskList getAllTasks() {
+
+        return allTasks;
+
+    }
+
+    public Task createTask(String title, Date time, boolean active) {
+        Task task = new Task(title, time);
+        task.setActive(active);
+
+        return task;
+    }
+
+    public Task createTask(String title, Date startTime, Date endTime, int interval, boolean active) {
+        Task task = new Task(title, startTime, endTime, interval);
+        task.setActive(active);
+
+        return task;
+    }
 
     @Override
     public void registerObserver(Observer o) {
@@ -87,7 +111,7 @@ public class TaskManagerModel implements Observable {
 
         for (Observer observer : observers)
         {
-            observer.update(allTasks);
+            observer.update(allTasks, OperationView.ListTasks);
         }
 
     }
