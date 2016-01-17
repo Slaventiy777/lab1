@@ -6,6 +6,7 @@ package ua.edu.sumdu.j2se.ZavaliiVV.tasks.view;
 
 public enum OperationView {
 
+    // For manipulation the list tasks
     ListTasks,
     TaskInformations,
     Add,
@@ -16,6 +17,14 @@ public enum OperationView {
     Calendar,
     Exit,
     Error,
-    SaveTask;
+    SaveTask,
+    // For manipulation the task
+    EditTitle,
+    EditTime,
+    EditStartTime,
+    EditEndTime,
+    EditInterval,
+    EditActive,
+    ExitEditMode;
 
 }

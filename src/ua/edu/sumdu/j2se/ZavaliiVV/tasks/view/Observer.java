@@ -12,8 +12,6 @@ import java.util.SortedMap;
  */
 public interface Observer {
 
-    void update(TaskList tasks, OperationView operationView);
-
-    void update(SortedMap<Date, Set<Task>> calendar, OperationView operationView);
+    void update();
 
 }

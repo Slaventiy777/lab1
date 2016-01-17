@@ -111,7 +111,7 @@ public class TaskManagerModel implements Observable {
 
         for (Observer observer : observers)
         {
-            observer.update(allTasks, OperationView.ListTasks);
+            observer.update();
         }
 
     }

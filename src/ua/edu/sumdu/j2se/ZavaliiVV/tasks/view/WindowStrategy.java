@@ -13,5 +13,7 @@ public interface WindowStrategy {
 
     void openWindow(TaskList tasks);
     void openWindow(SortedMap<Date, Set<Task>> calendar);
+    void setMenu();
+    OperationView enterOperation(int intOperation);
 
 }

@@ -2,62 +2,76 @@ package ua.edu.sumdu.j2se.ZavaliiVV.tasks.view;
 
 
 import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.Task;
-import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.TaskIO;
 import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.TaskList;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.text.ParseException;
-import java.util.Date;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.SortedMap;
+import static ua.edu.sumdu.j2se.ZavaliiVV.tasks.view.Print.*;
+
+import java.util.*;
 
 public class WindowEdit implements WindowStrategy {
 
+    private Map<Integer, OperationView> mapOperationView;
 
+    public WindowEdit() {
+        mapOperationView = new HashMap<>();
+
+        mapOperationView.put(1, OperationView.EditMode);
+        mapOperationView.put(2, TaskManagerView.getPreviousOperationView());
+        mapOperationView.put(3, OperationView.ListTasks);
+    }
 
     @Override
     public void openWindow(TaskList tasks) {
 
-        System.out.println();
+        println();
 
-        if(tasks.size() == 0) {
-            System.out.println("***Add task***");
-            System.out.println("");
-        } else {
+        println("***Edit task***");
+        println("");
 
-            System.out.println("***Edit task***");
-            System.out.println("");
+        Iterator<Task> iter = tasks.iterator();
 
-            Iterator<Task> iter = tasks.iterator();
+        if (iter.hasNext()) {
 
-            if (iter.hasNext()) {
+            Task task = iter.next();
 
-                Task task = iter.next();
+            println("Title        - '" + task.getTitle() + "';");
+            println("Is active    - " + task.isActive() + ";");
 
-                System.out.println("Title        - '" + task.getTitle() + "';");
-                System.out.println("Is active    - " + task.isActive() + ";");
-
-                if(task.isRepeated()) {
-                    System.out.println("Start time   - " + task.getStartTime() + ";");
-                    System.out.println("End time     - " + task.getEndTime() + ";");
-                    System.out.println("Interval     - " + task.getInterval() + ";");
-                } else {
-                    System.out.println("Time         - " + task.getTime() + ";");
-                }
-
+            if (task.isRepeated()) {
+                println("Start time   - " + task.getStartTime() + ";");
+                println("End time     - " + task.getEndTime() + ";");
+                println("Interval     - " + task.getInterval() + ";");
+            } else {
+                println("Time         - " + task.getTime() + ";");
             }
 
         }
 
-        System.out.println();
+        println();
+
+        setMenu();
 
     }
 
     @Override
-    public void openWindow(SortedMap<Date, Set<Task>> calendar) {
+    public void openWindow(SortedMap<Date, Set<Task>> calendar) {}
+
+    @Override
+    public void setMenu() {
+
+        println();
+        println("Start edit enter:                   1");
+        println("Back to the previous window enter:  2");
+        println("View list tasks enter:              3");
+        println();
 
     }
+
+    @Override
+    public OperationView enterOperation(int intOperation) {
+
+        return mapOperationView.get(intOperation);
+
+    }
+
 }

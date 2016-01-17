@@ -5,40 +5,74 @@ import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.Task;
 import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.TaskIO;
 import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.TaskList;
 
-import java.util.Date;
-import java.util.Iterator;
-import java.util.Set;
-import java.util.SortedMap;
+import static ua.edu.sumdu.j2se.ZavaliiVV.tasks.view.Print.*;
+
+import java.util.*;
 
 public class WindowListTasks implements WindowStrategy {
+
+    private Map<Integer, OperationView> mapOperationView;
+
+    public WindowListTasks() {
+        mapOperationView = new HashMap<>();
+
+        mapOperationView.put(1, OperationView.TaskInformations);
+        mapOperationView.put(2, OperationView.Add);
+        mapOperationView.put(3, OperationView.Edit);
+        mapOperationView.put(4, OperationView.Remove);
+        mapOperationView.put(5, OperationView.Calendar);
+        mapOperationView.put(6, OperationView.Update);
+        mapOperationView.put(7, OperationView.Exit);
+    }
 
     @Override
     public void openWindow(TaskList tasks) {
 
-        System.out.println("");
-        System.out.println("***List tasks***");
-        System.out.println("");
+        println("");
+        println("***List tasks***");
+        println("");
 
         Iterator<Task> iter = tasks.iterator();
 
         int i = 0;
         while(iter.hasNext()) {
-
             i++;
 
             Task task = iter.next();
-
             boolean lastIndex = !iter.hasNext();
-            System.out.println(i + ". " + TaskIO.taskToString(task, lastIndex));
 
+            println(i + ". " + TaskIO.taskToString(task, lastIndex));
         }
 
-        System.out.println();
+        println();
+
+        setMenu();
 
     }
 
     @Override
-    public void openWindow(SortedMap<Date, Set<Task>> calendar) {
+    public void openWindow(SortedMap<Date, Set<Task>> calendar) {}
+
+    @Override
+    public void setMenu() {
+
+        println();
+        println("View task information enter: 1");
+        println("Add new task enter:          2");
+        println("Edit task enter:             3");
+        println("Remove task enter:           4");
+        println("View calendar enter:         5");
+        println("Update list tasks enter:     6");
+        println("Quit enter:                  7");
+        println();
 
     }
+
+    @Override
+    public OperationView enterOperation(int intOperation) {
+
+        return mapOperationView.get(intOperation);
+
+    }
+
 }

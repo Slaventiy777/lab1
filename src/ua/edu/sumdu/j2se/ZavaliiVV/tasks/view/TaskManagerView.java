@@ -2,18 +2,15 @@ package ua.edu.sumdu.j2se.ZavaliiVV.tasks.view;
 
 import org.apache.log4j.Logger;
 
-import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.Task;
-import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.TaskIO;
-import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.TaskList;
-import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.TaskManagerModel;
+import ua.edu.sumdu.j2se.ZavaliiVV.tasks.model.*;
+
+import static ua.edu.sumdu.j2se.ZavaliiVV.tasks.view.Print.*;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.util.Date;
-import java.util.Set;
-import java.util.SortedMap;
 
 
 /**
@@ -23,180 +20,89 @@ import java.util.SortedMap;
 public class TaskManagerView implements Observer {
 
     private final TaskManagerModel model;
-    private OperationView previousOperation;
+
+    private static OperationView previousOperationView = OperationView.ListTasks;
+    private static OperationView operationView = OperationView.ListTasks;
+    private Task tempTask = null;
+    private CurrentWindow currentWindow = new CurrentWindow();
+
+    public static BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
+
     private static final Logger log = Logger.getLogger(TaskManagerView.class);
+
 
     public TaskManagerView(TaskManagerModel model) {
         this.model = model;
         model.registerObserver(this);
     }
 
-    public OperationView getPreviousOperation() {
-        return previousOperation;
+
+    public Task getTempTask() {
+        return tempTask;
     }
 
-    public void setPreviousOperation(OperationView previousOperation) {
-        this.previousOperation = previousOperation;
+    public void setTempTask(Task tempTask) {
+        this.tempTask = tempTask;
     }
 
-    public void setMenu(OperationView operationView) {
 
-        switch (operationView) {
-
-            case ListTasks:
-
-                System.out.println();
-                System.out.println("View task information enter: 1");
-                System.out.println("Add new task enter:          2");
-                System.out.println("Edit task enter:             3");
-                System.out.println("Remove task enter:           4");
-                System.out.println("View calendar enter:         5");
-                System.out.println("Update list tasks enter:     6");
-                System.out.println("Quit enter:                  7");
-                System.out.println();
-
-                setPreviousOperation(operationView);
-                break;
-            case Add:
-
-                System.out.println();
-                System.out.println("Save task enter:                    1");
-                System.out.println("Back to the previous window enter:  2");
-                System.out.println("View list tasks enter:              3");
-                System.out.println();
-
-                break;
-            case Edit:
-
-                System.out.println();
-                System.out.println("Start edit enter:                   1");
-                System.out.println("Back to the previous window enter:  2");
-                System.out.println("View list tasks enter:              3");
-                System.out.println();
-
-                break;
-            case Calendar:
-
-                System.out.println();
-                System.out.println("Back list tasks enter:  1");
-                System.out.println("Add new task enter:     2");
-                System.out.println();
-
-                setPreviousOperation(operationView);
-                break;
-            case TaskInformations:
-
-                System.out.println();
-                System.out.println("Back list tasks enter: 1");
-                System.out.println("Edit task enter:       2");
-                System.out.println();
-
-                setPreviousOperation(operationView);
-                break;
-            case Remove:
-
-                System.out.println();
-
-                break;
-            case Update:
-
-                System.out.println();
-
-                break;
-            case Exit:
-
-                System.out.println();
-
-                break;
-
-        }
-
+    public static OperationView getOperationView() {
+        return operationView;
     }
 
-    public OperationView enterOperation(OperationView currentOperation) throws IOException {
+    public static void setOperationView(OperationView nOperationView) {
+        operationView = nOperationView;
+    }
 
-        OperationView operationView = OperationView.Error;
+
+    public static OperationView getPreviousOperationView() {
+        return previousOperationView;
+    }
+
+    public static void setPreviousOperationView(OperationView nPreviousOperation) {
+        previousOperationView = nPreviousOperation;
+    }
+
+
+    public CurrentWindow getCurrentWindow() {
+        return currentWindow;
+    }
+
+    public void setCurrentWindow(CurrentWindow currentWindow) {
+        this.currentWindow = currentWindow;
+    }
+
+
+    public void enterOperation(CurrentWindow currentWindow) throws IOException {
+
+        OperationView tempOperationView;
 
         try {
-            BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
 
-            String text;
-            text = bReader.readLine();
+            int intOperation = Integer.parseInt(bReader.readLine());
 
-            int intOperation = Integer.parseInt(text);
-
-            if(currentOperation == OperationView.ListTasks) {
-
-                if(intOperation == 1)
-                    operationView = OperationView.TaskInformations;
-                else if(intOperation == 2)
-                    operationView = OperationView.Add;
-                else if(intOperation == 3)
-                    operationView = OperationView.Edit;
-                else if(intOperation == 4)
-                    operationView = OperationView.Remove;
-                else if(intOperation == 5)
-                    operationView = OperationView.Calendar;
-                else if(intOperation == 6)
-                    operationView = OperationView.Update;
-                else if(intOperation == 7)
-                    operationView = OperationView.Exit;
-                else
-                    System.out.println("Incorrect entry operation!");
-
-            } else if(currentOperation == OperationView.TaskInformations) {
-
-                if(intOperation == 1)
-                    operationView = OperationView.ListTasks;
-                else if(intOperation == 2)
-                    operationView = OperationView.Edit;
-                else
-                    System.out.println("Incorrect entry operation!");
-
-            } else if(currentOperation == OperationView.Add) {
-
-                if(intOperation == 1)
-                    operationView = OperationView.SaveTask;
-                else if(intOperation == 2)
-                    operationView = getPreviousOperation();
-                else if(intOperation == 3)
-                    operationView = OperationView.ListTasks;
-                else
-                    System.out.println("Incorrect entry operation!");
-
-            } else if(currentOperation == OperationView.Edit) {
-
-               if(intOperation == 1)
-                    operationView = OperationView.EditMode;
-               else if(intOperation == 2)
-                    operationView = getPreviousOperation();
-               else if(intOperation == 3)
-                    operationView = OperationView.ListTasks;
-               else
-                    System.out.println("Incorrect entry operation!");
-
-            } else if(currentOperation == OperationView.Calendar) {
-
-                if(intOperation == 1)
-                    operationView = OperationView.ListTasks;
-                else if(intOperation == 2)
-                    operationView = OperationView.Add;
-                else
-                    System.out.println("Incorrect entry operation!");
-
+            tempOperationView = currentWindow.enterOperation(intOperation);
+            if(tempOperationView == null) {
+                log.info("Incorrect entry operation!");
+                enterOperation(currentWindow);
+                return;
+            } else {
+                operationView = tempOperationView;
             }
 
         } catch (NumberFormatException e) {
-            log.error("Incorrect entry operation!");
-            System.out.println("\nEnter correct operation:");
-            return enterOperation(currentOperation);
+            log.error(e.getMessage(), e);
+            println();
+            println("Enter correct operation:");
+            enterOperation(currentWindow);
+            return;
         } catch (IOException e) {
-            log.error("Incorrect entry operation!");
-            System.out.println("\nEnter correct operation:");
-            return enterOperation(currentOperation);
+            log.error(e.getMessage(), e);
+            println();
+            println("Enter correct operation:");
+            enterOperation(currentWindow);
+            return;
         }
-
-        return operationView;
 
     }
 
@@ -204,17 +110,15 @@ public class TaskManagerView implements Observer {
     public int choiceTaskID(int size) throws IOException {
 
         if(size <= 0) {
-            System.out.println("Task list is empty!");
+            println("Task list is empty!");
             return -1;
         }
-
-        BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
 
         int index = -1;
         try {
             while(true) {
 
-                System.out.println("Enter task ID:");
+                println("Enter task ID:");
 
                 String text;
                 text = bReader.readLine();
@@ -225,15 +129,15 @@ public class TaskManagerView implements Observer {
                     index = intOperation;
                     break;
                 } else {
-                    System.out.println("Incorrect entry task ID.");
+                    println("Incorrect entry task ID.");
                 }
 
             }
         } catch (NumberFormatException e) {
-            log.error("Incorrect entry task ID.");
+            log.error(e.getMessage(), e);
             return choiceTaskID(size);
         } catch (IOException e) {
-            log.error("Incorrect entry task ID.");
+            log.error(e.getMessage(), e);
             return choiceTaskID(size);
         }
 
@@ -244,42 +148,39 @@ public class TaskManagerView implements Observer {
 
     public String enterTitle() throws IOException {
 
-        BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
-
         String title;
         try {
             while(true) {
-                System.out.println("Enter title task:");
+                println("Enter title task:");
 
                 title = bReader.readLine();
 
                 if(!title.trim().equals("")) {
                     break;
                 } else {
-                    System.out.println("Incorrect entry task title.");
+                    println("Incorrect entry task title.");
                 }
             }
         } catch (NumberFormatException e) {
-            log.error("Incorrect entry task title.");
+            log.error(e.getMessage(), e);
             return enterTitle();
         } catch (IOException e) {
-            log.error("Incorrect entry task title.");
+            log.error(e.getMessage(), e);
             return enterTitle();
         }
 
         return title;
+
     }
 
     public boolean enterBoolean(String str) throws IOException {
-
-        BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
 
         boolean isRepeated;
         String text;
         try {
             while(true) {
-                System.out.println("If task is " + str + " enter:     Y");
-                System.out.println("If task is not " + str + " enter: N");
+                println("If task is " + str + " enter:     Y");
+                println("If task is not " + str + " enter: N");
 
                 text = bReader.readLine();
 
@@ -290,14 +191,14 @@ public class TaskManagerView implements Observer {
                     isRepeated = false;
                     break;
                 } else {
-                    System.out.println("Incorrect entry info task " + str + ".");
+                    println("Incorrect entry info task " + str + ".");
                 }
             }
         } catch (NumberFormatException e) {
-            log.error("Incorrect entry info task " + str + ".");
+            log.error(e.getMessage(), e);
             return enterBoolean(str);
         } catch (IOException e) {
-            log.error("Incorrect entry info task " + str + ".");
+            log.error(e.getMessage(), e);
             return enterBoolean(str);
         }
 
@@ -307,13 +208,11 @@ public class TaskManagerView implements Observer {
 
     public Date enterDate(String str) throws IOException {
 
-        BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
-
         Date date;
         String text;
         try {
             while(true) {
-                System.out.println("Enter " + str + " in format - year-month-day hour:minute:second.millisecond");
+                println("Enter " + str + " in format - year-month-day hour:minute:second.millisecond");
 
                 text = bReader.readLine();
 
@@ -326,10 +225,10 @@ public class TaskManagerView implements Observer {
                 }
             }
         } catch (NumberFormatException e) {
-            log.error("Incorrect entry info " + str + ".");
+            log.error(e.getMessage(), e);
             return enterDate(str);
         } catch (IOException e) {
-            log.error("Incorrect entry info " + str + ".");
+            log.error(e.getMessage(), e);
             return enterDate(str);
         }
 
@@ -339,13 +238,11 @@ public class TaskManagerView implements Observer {
 
     public int enterInterval() throws IOException {
 
-        BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
-
         String text;
         int interval;
         try {
             while(true) {
-                System.out.println("Enter interval repeated task (in seconds):");
+                println("Enter interval repeated task (in seconds):");
 
                 text = bReader.readLine();
 
@@ -354,14 +251,14 @@ public class TaskManagerView implements Observer {
                 if(interval > 0) {
                     break;
                 } else {
-                    System.out.println("Incorrect entry task interval.");
+                    println("Incorrect entry task interval.");
                 }
             }
         } catch (NumberFormatException e) {
-            log.error("Incorrect entry task interval.");
+            log.error(e.getMessage(), e);
             return enterInterval();
         } catch (IOException e) {
-            log.error("Incorrect entry task interval.");
+            log.error(e.getMessage(), e);
             return enterInterval();
         }
 
@@ -369,130 +266,31 @@ public class TaskManagerView implements Observer {
     }
 
 
-    public void editTask(Task task) throws IOException {
-
-        System.out.println("***Edit mode***");
-
-        try {
-            while (true) {
-
-                System.out.println();
-                System.out.println("Edit title enter:       1");
-                if(!task.isRepeated()) {
-                    System.out.println("Edit time enter:        2");
-                    System.out.println("Edit active task enter: 3");
-                    System.out.println("Exit edit mode enter:   4");
-                } else {
-                    System.out.println("Edit start time enter:  2");
-                    System.out.println("Edit end time enter:    3");
-                    System.out.println("Edit interval enter:    4");
-                    System.out.println("Edit active task enter: 5");
-                    System.out.println("Exit edit mode enter:   6");
-                }
-                System.out.println();
-
-                BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
-
-                String text;
-                text = bReader.readLine();
-
-                int intOperation = Integer.parseInt(text);
-
-                if(!task.isRepeated()) {
-
-                    if(intOperation == 1)
-                        task.setTitle(enterTitle());
-                    else if(intOperation == 2)
-                        task.setTime(enterDate("time"));
-                    else if(intOperation == 3)
-                        task.setActive(enterBoolean("active"));
-                    else if(intOperation == 4)
-                        return;
-                    else
-                        System.out.println("Incorrect entry operation!");
-
-                } else {
-
-                    if(intOperation == 1)
-                        task.setTitle(enterTitle());
-                    else if(intOperation == 2)
-                        task.setTime(enterDate("start time"));
-                    else if(intOperation == 3)
-                        task.setTime(enterDate("end time"));
-                    else if(intOperation == 4)
-                        task.setInterval(enterInterval());
-                    else if(intOperation == 5)
-                        task.setActive(enterBoolean("active"));
-                    else if(intOperation == 6)
-                        return;
-                    else
-                        System.out.println("Incorrect entry operation!");
-
-                }
-
-            }
-        } catch (NumberFormatException e) {
-            log.error("Incorrect entry operation.");
-            editTask(task);
-            return;
-        } catch (IOException e) {
-            log.error("Incorrect entry operation.");
-            editTask(task);
-            return;
-        }
-
-    }
-
-
     @Override
-    public void update(TaskList tasks, OperationView operationView) {
-
-        UpdateWindow updateWindow = new UpdateWindow();
+    public void update() {
 
         switch (operationView) {
 
-            case Add:
-            case Edit:
-                updateWindow.setWindowStrategy(new WindowEdit());
-                updateWindow.openWindowStrategy(tasks);
-                break;
             case ListTasks:
-                updateWindow.setWindowStrategy(new WindowListTasks());
-                updateWindow.openWindowStrategy(tasks);
-                break;
-            case Calendar:
-                updateWindow.setWindowStrategy(new WindowCalendar());
+                currentWindow.setWindowStrategy(new WindowListTasks());
                 break;
             case TaskInformations:
-                updateWindow.setWindowStrategy(new WindowTaskInformations());
-                updateWindow.openWindowStrategy(tasks);
-                break;
-
-        }
-
-    }
-
-    @Override
-    public void update(SortedMap<Date, Set<Task>> calendar, OperationView operationView) {
-
-        UpdateWindow updateWindow = new UpdateWindow();
-
-        switch (operationView) {
-
-            case Add:
-            case Edit:
-                updateWindow.setWindowStrategy(new WindowEdit());
-                break;
-            case ListTasks:
-                updateWindow.setWindowStrategy(new WindowListTasks());
+                currentWindow.setWindowStrategy(new WindowTaskInformations());
                 break;
             case Calendar:
-                updateWindow.setWindowStrategy(new WindowCalendar());
-                updateWindow.openWindowStrategy(calendar);
+                currentWindow.setWindowStrategy(new WindowCalendar());
                 break;
-            case TaskInformations:
-                updateWindow.setWindowStrategy(new WindowTaskInformations());
+            case Add:
+                currentWindow.setWindowStrategy(new WindowAdd());
                 break;
+            case Edit:
+                currentWindow.setWindowStrategy(new WindowEdit());
+                break;
+            case EditMode:
+                currentWindow.setWindowStrategy(new WindowEditMode(getTempTask()));
+                break;
+            default:
+                throw new IllegalStateException();
 
         }
 

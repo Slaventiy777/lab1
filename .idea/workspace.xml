@@ -23,17 +23,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TaskManagerModel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TaskManagerModel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/TaskManagerModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.008787346">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#TaskManagerModel#0;class#TaskManagerModel#0" expanded="false" />
-                <element signature="method#readAllTasksList#0;class#TaskManagerModel#0" expanded="false" />
                 <element signature="method#addTask#0;class#TaskManagerModel#0" expanded="false" />
-                <element signature="method#removeTask#0;class#TaskManagerModel#0" expanded="false" />
                 <element signature="method#getCurrentCalendar#0;class#TaskManagerModel#0" expanded="false" />
                 <element signature="method#calendar#0;class#TaskManagerModel#0" expanded="false" />
                 <element signature="method#getAllTasks#0;class#TaskManagerModel#0" expanded="false" />
@@ -46,101 +44,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskIO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/TaskIO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-              <folding>
-                <element signature="method#write#0;class#TaskIO#0" expanded="false" />
-                <element signature="method#read#0;class#TaskIO#0" expanded="false" />
-                <element signature="method#writeBinary#0;class#TaskIO#0" expanded="false" />
-                <element signature="method#readBinary#0;class#TaskIO#0" expanded="false" />
-                <element signature="method#read#1;class#TaskIO#0" expanded="false" />
-                <element signature="method#readText#0;class#TaskIO#0" expanded="false" />
-                <element signature="method#intervalToString#0;class#TaskIO#0" expanded="false" />
-                <element signature="method#stringToDate#0;class#TaskIO#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TaskManagerView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/TaskManagerView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="307" column="57" selection-start-line="307" selection-start-column="57" selection-end-line="307" selection-end-column="57" />
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#TaskManagerView#0;class#TaskManagerView#0" expanded="false" />
-                <element signature="method#setMenu#0;class#TaskManagerView#0" expanded="false" />
+                <element signature="method#setPreviousOperationView#0;class#TaskManagerView#0" expanded="false" />
+                <element signature="method#enterOperation#0;class#TaskManagerView#0" expanded="false" />
                 <element signature="method#choiceTaskID#0;class#TaskManagerView#0" expanded="false" />
                 <element signature="method#enterTitle#0;class#TaskManagerView#0" expanded="false" />
                 <element signature="method#enterBoolean#0;class#TaskManagerView#0" expanded="false" />
                 <element signature="method#enterDate#0;class#TaskManagerView#0" expanded="false" />
                 <element signature="method#enterInterval#0;class#TaskManagerView#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListTasksFile.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ListTasksFile.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myproject.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myproject.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2361111">
-              <caret line="7" column="91" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Program.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/program/Program.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OperationView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/OperationView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="12" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WindowListTasks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowListTasks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="9" selection-start-line="21" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#update#0;class#TaskManagerView#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -150,10 +69,9 @@
         <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/TaskManagerController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="125" column="54" selection-start-line="125" selection-start-column="41" selection-end-line="125" selection-end-column="54" />
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#TaskManagerController#0;class#TaskManagerController#0" expanded="false" />
                 <element signature="method#createNotification#0;class#TaskManagerController#0" expanded="false" />
               </folding>
             </state>
@@ -166,8 +84,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -179,13 +97,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/Tasks.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/ArrayTaskList.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/Task.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/TaskList.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/TaskIO.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/Main.java" />
-        <option value="$PROJECT_DIR$/write" />
         <option value="$PROJECT_DIR$/read" />
         <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/LinkedTaskList.java" />
         <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/LinkedTaskList.java" />
@@ -208,19 +119,35 @@
         <option value="$PROJECT_DIR$/myproject.log" />
         <option value="$PROJECT_DIR$/src/log4j.xml" />
         <option value="$PROJECT_DIR$/src/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowTaskInformations.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowListTasks.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowStrategy.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/UpdateWindow.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowEdit.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/Observer.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowCalendar.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/TaskManagerModel.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/OperationView.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/TaskManagerController.java" />
-        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/TaskManagerView.java" />
         <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/TaskIO.java" />
         <option value="$PROJECT_DIR$/ListTasksFile.txt" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/Print.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/Observer.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/TaskManagerModel.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/EnterOperation.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/UpdateWindow.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowStrategy.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowListTasks.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowTaskInformations.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/OperationView.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowEditMode.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/CurrentWindow.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationTaskInfotmations.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowAdd.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowEdit.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationCalendar.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationListTasks.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationSaveTask.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/ControllerUseOperation.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationRemove.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationEditMode.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationTaskInformations.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationEdit.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationAdd.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationUpdate.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowCalendar.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/TaskManagerController.java" />
+        <option value="$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/TaskManagerView.java" />
       </list>
     </option>
   </component>
@@ -272,6 +199,7 @@
     <panes>
       <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,50 +271,6 @@
               <option name="myItemId" value="tasks" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="program" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Labs 1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjectTask" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Labs 1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -412,7 +296,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,6 +316,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ua.edu.sumdu.j2se.ZavaliiVV.tasks.controller" />
+      <recent name="ua.edu.sumdu.j2se.ZavaliiVV.tasks.view" />
       <recent name="ua.edu.sumdu.j2se.ZavaliiVV.tasks" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -869,15 +754,17 @@
       <workItem from="1452623671345" duration="21527000" />
       <workItem from="1452667513705" duration="266000" />
       <workItem from="1452710296162" duration="11390000" />
+      <workItem from="1452796228948" duration="13473000" />
+      <workItem from="1453033555510" duration="25725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96133000" />
+    <option name="totallyTimeSpent" value="135331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -886,11 +773,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6694352" sideWeight="0.22919936" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293371" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28398386" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19650067" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18481375" sideWeight="0.48994976" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839838" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -902,7 +790,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -925,13 +812,18 @@
           <properties />
           <option name="timeStamp" value="157" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/TaskManagerView.java</url>
+          <line>210</line>
+          <properties />
+          <option name="timeStamp" value="174" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="158" />
+      <option name="time" value="175" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="file.exists()" language="JAVA" custom="" />
-        <watch expression="file.isFile()" language="JAVA" custom="" />
+        <watch expression="TaskManagerView.getOperationView()" language="JAVA" custom="" />
       </configuration>
     </watches-manager>
   </component>
@@ -940,126 +832,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/net/ServerSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9846154">
-          <caret line="356" column="23" selection-start-line="356" selection-start-column="16" selection-end-line="356" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/LinkedTaskList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/ArrayTaskList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.33286715">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26153848">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Observable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6657343">
-          <caret line="164" column="0" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/text/ParseException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3090909">
-          <caret line="49" column="6" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/TaskList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23776224">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4755245">
-          <caret line="270" column="29" selection-start-line="270" selection-start-column="29" selection-end-line="270" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5958042">
-          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="263" column="45" selection-start-line="263" selection-start-column="32" selection-end-line="263" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33286715">
-          <caret line="110" column="17" selection-start-line="110" selection-start-column="17" selection-end-line="110" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33286715">
-          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/notification/ScreenNotification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80839163">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/notification/Notification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19020979">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/notification/NotificationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55664337">
-          <caret line="35" column="31" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProjectTask 5+/ProjectTask.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/io/FileWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1132,48 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowTaskInformations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="13" selection-start-line="25" selection-start-column="12" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65120965">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23991935">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowEdit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17741935">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/UpdateWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5141129">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#820#821#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/SortedMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1195,14 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.023776224">
-          <caret line="395" column="10" selection-start-line="395" selection-start-column="10" selection-end-line="395" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/Tasks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26293707">
@@ -1210,7 +932,7 @@
           <folding>
             <element signature="docComment;method#incoming#0;class#Tasks#0" expanded="false" />
             <element signature="docComment;method#calendar#0;class#Tasks#0" expanded="false" />
-            <element signature="e#1447#1464#0" expanded="true" />
+            <element signature="e#1447#1464#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1219,18 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.023776224">
           <caret line="146" column="11" selection-start-line="146" selection-start-column="11" selection-end-line="146" selection-end-column="11" />
-          <folding>
-            <element signature="e#5767#5768#0" expanded="false" />
-            <element signature="e#5800#5801#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowCalendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1238,7 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43496802">
           <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1247,27 +956,23 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="72" column="11" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
           <folding>
-            <element signature="e#1858#1859#0" expanded="true" />
-            <element signature="e#1896#1897#0" expanded="true" />
+            <element signature="e#1858#1859#0" expanded="false" />
+            <element signature="e#1896#1897#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/OperationView.java">
+    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="12" />
-          <folding />
+        <state vertical-scroll-proportion="0.16620111">
+          <caret line="7" column="91" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowListTasks.java">
+    <entry file="file://$PROJECT_DIR$/ListTasksFile.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="9" selection-start-line="21" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -1279,42 +984,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/TaskManagerController.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/Print.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="125" column="54" selection-start-line="125" selection-start-column="41" selection-end-line="125" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.3090909">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TaskManagerController#0;class#TaskManagerController#0" expanded="false" />
-            <element signature="method#createNotification#0;class#TaskManagerController#0" expanded="false" />
+            <element signature="e#169#170#0" expanded="false" />
+            <element signature="e#208#209#0" expanded="false" />
+            <element signature="e#244#245#0" expanded="false" />
+            <element signature="e#282#283#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/TaskManagerModel.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/Override.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64195806">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23776224">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/TaskList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16643357">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+          <caret line="211" column="6" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70408165">
+          <caret line="553" column="17" selection-start-line="553" selection-start-column="13" selection-end-line="553" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TaskManagerModel#0;class#TaskManagerModel#0" expanded="false" />
-            <element signature="method#readAllTasksList#0;class#TaskManagerModel#0" expanded="false" />
-            <element signature="method#addTask#0;class#TaskManagerModel#0" expanded="false" />
-            <element signature="method#removeTask#0;class#TaskManagerModel#0" expanded="false" />
-            <element signature="method#getCurrentCalendar#0;class#TaskManagerModel#0" expanded="false" />
-            <element signature="method#calendar#0;class#TaskManagerModel#0" expanded="false" />
-            <element signature="method#getAllTasks#0;class#TaskManagerModel#0" expanded="false" />
-            <element signature="method#createTask#0;class#TaskManagerModel#0" expanded="false" />
-            <element signature="method#createTask#1;class#TaskManagerModel#0" expanded="false" />
-            <element signature="method#registerObserver#0;class#TaskManagerModel#0" expanded="false" />
-            <element signature="method#notifyObservers#0;class#TaskManagerModel#0" expanded="false" />
+            <element signature="e#19296#19297#0" expanded="false" />
+            <element signature="e#19379#19380#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowListTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8335664">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#openWindow#0;class#WindowListTasks#0" expanded="false" />
+            <element signature="method#setMenu#0;class#WindowListTasks#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/OperationView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64195806">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33730158">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/TaskIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="1.9623016">
           <caret line="263" column="0" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
           <folding>
             <element signature="method#write#0;class#TaskIO#0" expanded="false" />
@@ -1329,44 +1084,228 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/TaskManagerView.java">
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/CurrentWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="307" column="57" selection-start-line="307" selection-start-column="57" selection-end-line="307" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.6964286">
+          <caret line="34" column="5" selection-start-line="32" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TaskManagerView#0;class#TaskManagerView#0" expanded="false" />
-            <element signature="method#setMenu#0;class#TaskManagerView#0" expanded="false" />
-            <element signature="method#choiceTaskID#0;class#TaskManagerView#0" expanded="false" />
-            <element signature="method#enterTitle#0;class#TaskManagerView#0" expanded="false" />
-            <element signature="method#enterBoolean#0;class#TaskManagerView#0" expanded="false" />
-            <element signature="method#enterDate#0;class#TaskManagerView#0" expanded="false" />
-            <element signature="method#enterInterval#0;class#TaskManagerView#0" expanded="false" />
+            <element signature="e#856#857#0" expanded="false" />
+            <element signature="e#922#923#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ListTasksFile.txt">
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowTaskInformations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+          <caret line="17" column="50" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+          <folding>
+            <element signature="method#openWindow#0;class#WindowTaskInformations#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationCalendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6626984">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationListTasks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.640873">
+          <caret line="25" column="85" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationRemove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8769841">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/ControllerUseOperation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowEditMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33730158">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="method#openWindow#0;class#WindowEditMode#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowEdit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41463414">
+          <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationSaveTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2902439">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7512195">
+          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40243903">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="method#openWindow#0;class#WindowAdd#0" expanded="false" />
+            <element signature="method#openWindow#1;class#WindowAdd#0" expanded="false" />
+            <element signature="method#setMenu#0;class#WindowAdd#0" expanded="false" />
+            <element signature="method#enterOperation#0;class#WindowAdd#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationEdit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35853657">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationTaskInformations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationUpdate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41827768">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/WindowCalendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1054481">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+          <folding>
+            <element signature="method#WindowCalendar#0;class#WindowCalendar#0" expanded="false" />
+            <element signature="method#openWindow#1;class#WindowCalendar#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/UseOperationEditMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6115993">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/controller/TaskManagerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#createNotification#0;class#TaskManagerController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86994725">
+          <caret line="814" column="31" selection-start-line="814" selection-start-column="31" selection-end-line="814" selection-end-column="31" />
+          <folding>
+            <element signature="e#33047#33048#0" expanded="true" />
+            <element signature="e#33096#33097#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myproject.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="12" />
+        <state vertical-scroll-proportion="-2.3760984">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/view/TaskManagerView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2361111">
-          <caret line="7" column="91" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="91" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TaskManagerView#0;class#TaskManagerView#0" expanded="false" />
+            <element signature="method#setPreviousOperationView#0;class#TaskManagerView#0" expanded="false" />
+            <element signature="method#enterOperation#0;class#TaskManagerView#0" expanded="false" />
+            <element signature="method#choiceTaskID#0;class#TaskManagerView#0" expanded="false" />
+            <element signature="method#enterTitle#0;class#TaskManagerView#0" expanded="false" />
+            <element signature="method#enterBoolean#0;class#TaskManagerView#0" expanded="false" />
+            <element signature="method#enterDate#0;class#TaskManagerView#0" expanded="false" />
+            <element signature="method#enterInterval#0;class#TaskManagerView#0" expanded="false" />
+            <element signature="method#update#0;class#TaskManagerView#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ua/edu/sumdu/j2se/ZavaliiVV/tasks/model/TaskManagerModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.008787346">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TaskManagerModel#0;class#TaskManagerModel#0" expanded="false" />
+            <element signature="method#addTask#0;class#TaskManagerModel#0" expanded="false" />
+            <element signature="method#getCurrentCalendar#0;class#TaskManagerModel#0" expanded="false" />
+            <element signature="method#calendar#0;class#TaskManagerModel#0" expanded="false" />
+            <element signature="method#getAllTasks#0;class#TaskManagerModel#0" expanded="false" />
+            <element signature="method#createTask#0;class#TaskManagerModel#0" expanded="false" />
+            <element signature="method#createTask#1;class#TaskManagerModel#0" expanded="false" />
+            <element signature="method#registerObserver#0;class#TaskManagerModel#0" expanded="false" />
+            <element signature="method#notifyObservers#0;class#TaskManagerModel#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
