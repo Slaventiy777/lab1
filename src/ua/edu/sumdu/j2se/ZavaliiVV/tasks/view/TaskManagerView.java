@@ -212,12 +212,13 @@ public class TaskManagerView implements Observer {
         String text;
         try {
             while(true) {
-                println("Enter " + str + " in format - year-month-day hour:minute:second.millisecond");
+                println("Enter " + str + " in format - year-month-day hour:minute:second");
 
                 text = bReader.readLine();
 
                 try {
-                    date = TaskIO.stringToDate("[" + text + "]");
+                    date = TaskIO.stringToDate("[" + text + ".000]");
+                    println("" + date);
                     break;
                 } catch (ParseException e) {
                     log.error("Incorrect entry info " + str + ".");

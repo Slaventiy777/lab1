@@ -1,6 +1,7 @@
 package ua.edu.sumdu.j2se.ZavaliiVV.tasks.model;
 
 import java.io.*;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.util.Date;
 import java.text.SimpleDateFormat;
@@ -153,6 +154,8 @@ public class TaskIO {
 
     public static void read(TaskList tasks, Reader in) throws IOException, ParseException {
 
+        sdf.setLenient(false);
+
         BufferedReader buffReader = new BufferedReader(in);
 
         try {
@@ -279,6 +282,8 @@ public class TaskIO {
 
     public static String taskToString(Task task, boolean lastIndex) {
 
+        sdf.setLenient(false);
+
         StringBuffer nLine = new StringBuffer();
 
         nLine.append('"');
@@ -393,6 +398,7 @@ public class TaskIO {
     public static Date stringToDate(String str) throws ParseException {
 
         Date date;
+        sdf.setLenient(false);
         date = sdf.parse(str);
 
         return date;

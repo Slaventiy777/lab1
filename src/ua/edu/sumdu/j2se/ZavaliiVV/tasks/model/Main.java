@@ -163,6 +163,13 @@ import java.io.*;
          TaskIO.readText(taskList1, in);
          TaskIO.writeText(taskList1, out);
 
+         File inb = new File("writeb");
+         File outb = new File("readb");
+
+         TaskList taskList3 = new ArrayTaskList();
+         TaskIO.writeBinary(taskList, inb);
+         TaskIO.readBinary(taskList3, inb);
+         TaskIO.writeBinary(taskList3, outb);
 
 //         PipedInputStream inP = new PipedInputStream();
 //         PipedOutputStream outP = new PipedOutputStream(inP);
