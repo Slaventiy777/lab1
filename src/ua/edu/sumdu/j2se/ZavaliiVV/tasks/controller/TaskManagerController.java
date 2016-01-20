@@ -7,6 +7,8 @@ import ua.edu.sumdu.j2se.ZavaliiVV.tasks.notification.NotificationManager;
 import ua.edu.sumdu.j2se.ZavaliiVV.tasks.view.OperationView;
 import ua.edu.sumdu.j2se.ZavaliiVV.tasks.view.TaskManagerView;
 
+import static ua.edu.sumdu.j2se.ZavaliiVV.tasks.view.Print.*;
+
 import java.io.IOException;
 
 /**
@@ -50,13 +52,16 @@ public class TaskManagerController {
 
     public void startController() throws IOException{
 
+        println();
+        log.info("Start program:");
+
         try{
             while(true) {
                 controllerUseOperation = ControllerUseOperation.newUseOperation(TaskManagerView.getOperationView());
                 controllerUseOperation.performOperation(this);
             }
         } catch (IOException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
 
             TaskManagerView.setOperationView(OperationView.ListTasks);
             startController();

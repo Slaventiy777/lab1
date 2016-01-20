@@ -37,7 +37,7 @@ public class TaskManagerModel implements Observable {
         try {
             TaskIO.readText(allTasks, new File(tasksPathName));
         } catch (IOException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
         }
         return allTasks;
     }

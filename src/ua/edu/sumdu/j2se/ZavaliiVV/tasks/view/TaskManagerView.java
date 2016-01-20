@@ -91,13 +91,13 @@ public class TaskManagerView implements Observer {
             }
 
         } catch (NumberFormatException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
             println();
             println("Enter correct operation:");
             enterOperation(currentWindow);
             return;
         } catch (IOException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
             println();
             println("Enter correct operation:");
             enterOperation(currentWindow);
@@ -134,10 +134,10 @@ public class TaskManagerView implements Observer {
 
             }
         } catch (NumberFormatException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
             return choiceTaskID(size);
         } catch (IOException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
             return choiceTaskID(size);
         }
 
@@ -162,10 +162,10 @@ public class TaskManagerView implements Observer {
                 }
             }
         } catch (NumberFormatException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
             return enterTitle();
         } catch (IOException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
             return enterTitle();
         }
 
@@ -195,10 +195,10 @@ public class TaskManagerView implements Observer {
                 }
             }
         } catch (NumberFormatException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
             return enterBoolean(str);
         } catch (IOException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
             return enterBoolean(str);
         }
 
@@ -221,15 +221,16 @@ public class TaskManagerView implements Observer {
                     println("" + date);
                     break;
                 } catch (ParseException e) {
-                    log.error("Incorrect entry info " + str + ".");
+                    log.info("Incorrect entry info " + str + ".");
+                    log.error("Exception: ", e);
                     return enterDate(str);
                 }
             }
         } catch (NumberFormatException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
             return enterDate(str);
         } catch (IOException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
             return enterDate(str);
         }
 
@@ -256,10 +257,10 @@ public class TaskManagerView implements Observer {
                 }
             }
         } catch (NumberFormatException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
             return enterInterval();
         } catch (IOException e) {
-            log.error(e.getMessage(), e);
+            log.error("Exception: ", e);
             return enterInterval();
         }
 
